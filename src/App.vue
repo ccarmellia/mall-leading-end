@@ -210,6 +210,169 @@ export default {
 }
 </script>
 <style >
+/*移动端 */
+@media screen and (max-width:750px){
+  /* 全局CSS */
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+}
+.el-menu-demo{
+  display: flex;
+  width: 100%;
+}
+.el-menu-demo li{
+  font-size: 14px;
+}
+.el-menu-demo el-menu-item{
+  display: flex;
+}
+#app .el-header {
+  padding: 0;
+}
+#app .el-main {
+  min-height: 300px;
+  padding: 20px 0;
+}
+#app .el-footer {
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+/* 全局CSS END */
+
+/* 顶部导航栏CSS */
+.topbar {
+  width: 100%;
+  height: 40px;
+  background-color: #3d3d3d;
+  /*margin-bottom: 20px;*/
+}
+.topbar .nav {
+  width: 100%;
+  margin: 0 auto;
+}
+.topbar .nav ul {
+  float: right;
+}
+.topbar .nav li {
+  float: left;
+  height: 40px;
+  color: #b0b0b0;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 20px;
+}
+.topbar .nav .sep {
+  color: #b0b0b0;
+  font-size: 12px;
+  margin: 0 5px;
+}
+.topbar .nav li .el-button {
+  color: #b0b0b0;
+}
+.topbar .nav .el-button:hover {
+  color: #fff;
+}
+.topbar .nav li a {
+  color: #b0b0b0;
+}
+.topbar .nav a:hover {
+  color: #fff;
+}
+.topbar .nav .shopCart {
+  width: 120px;
+  background: #424242;
+}
+.topbar .nav .shopCart:hover {
+  background: #fff;
+}
+.topbar .nav .shopCart:hover a {
+  color: #ff6700;
+}
+.topbar .nav .shopCart-full {
+  width: 120px;
+  background: #ff6700;
+}
+.topbar .nav .shopCart-full a {
+  color: white;
+}
+/* 顶部导航栏CSS END */
+
+/* 顶栏容器CSS */
+.el-header .el-menu {
+  width: 100%;
+  margin: 0 auto;
+}
+.el-header .logo{
+  width: 60px;
+}
+.el-header .so {
+  display: none;
+}
+.el-header li{
+  font-size: 12px;
+  padding: 0 20px 0 20px;
+}
+
+/* 顶栏容器CSS END */
+
+/* 底栏容器CSS */
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #2f2f2f;
+  padding-bottom: 20px;
+}
+.footer .ng-promise-box .ng-promise p a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 210px;
+  padding-left: 44px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-decoration: none;
+}
+.footer .mod_help {
+  text-align: center;
+  color: #888888;
+}
+.footer .mod_help p {
+  margin: 20px 0 16px 0;
+}
+
+.footer .mod_help p a {
+  color: #888888;
+  text-decoration: none;
+}
+.footer .mod_help p a:hover {
+  color: #fff;
+}
+/*.footer .mod_help p span {*/
+/*  padding: 0 22px;*/
+/*}*/
+#loginView .el-drawer__body{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+#register .el-drawer__body{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+#personal>span{
+  float: right;
+}
+/* 底栏容器CSS END */
+}
+
+@media screen and (min-width:750px){
 /* 全局CSS */
 *{
   padding: 0;
@@ -356,4 +519,6 @@ a:hover {
   float: right;
 }
 /* 底栏容器CSS END */
+}
+
 </style>
