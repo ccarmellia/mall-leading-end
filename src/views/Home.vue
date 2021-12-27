@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <div class="Imgroll">
-      <el-carousel indicator-position="inside" height="500px">
+      <el-carousel indicator-position="inside" >
         <el-carousel-item v-for="(item, index) in imgUrls" :key="index">
-          <img style="height: 500px" ref="img" :src="item.imageUrl" />
+          <img ref="img" :src="item.imageUrl" />
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 750px) {
   .el-menu-demo el-menu-item {
     padding: 50px;
     display: inline-block;
@@ -85,13 +85,18 @@ export default {
     float: right;
   }
   .Imgroll {
-    max-width: 1225px;
+    width: 100%;
+    height: 200px;
     text-align: center;
     margin: 0 auto;
   }
+  .Imgroll img{
+    width: 100%;
+    height: 200px;
+  }
   .home .main {
     margin: 0 auto;
-    max-width: 1225px;
+    width: 100%;
   }
   .home .main .product-lists {
     min-height: 650px;
@@ -101,7 +106,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 750px) {
   .el-menu-demo el-menu-item {
     padding: 50px;
     display: inline-block;
@@ -113,8 +118,12 @@ export default {
   }
   .Imgroll {
     max-width: 700px;
+    height: 500px;
     text-align: center;
     margin: 0 auto;
+  }
+  .Imgroll img{
+    height: 500px;
   }
   .home .main {
     margin: 0 auto;

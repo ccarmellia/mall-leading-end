@@ -16,7 +16,7 @@
     <div class="nav">
       <div class="product-nav">
         <div class="title">分类</div>
-        <el-tabs v-model="activeName" type="card">
+        <el-tabs v-model="activeName" type="card" >
 
           <el-tab-pane
               v-for="type in typeList"
@@ -214,7 +214,72 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 750px) {
 .products {
+  background-color: #f5f5f5;
+}
+/* 面包屑CSS */
+/*.el-tabs--card .el-tabs__header {*/
+/*  border-bottom: none;*/
+/*}*/
+.products .breadcrumb {
+  height: 50px;
+  background-color: white;
+}
+.products .breadcrumb .el-breadcrumb {
+  width: 1225px;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+/* 面包屑CSS END */
+
+/* 分类标签CSS */
+.products .nav {
+  background-color: white;
+  display: none;
+}
+.products .nav .product-nav {
+  width: 1225px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+.nav .product-nav .title {
+  width: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  float: left;
+}
+/* 分类标签CSS END */
+
+/* 主要内容区CSS */
+.products .main {
+  margin: 0 auto;
+  max-width: 1225px;
+}
+.products .main .product-lists {
+  width: 350px;
+  min-height: 650px;
+  padding: 14.5px 20px 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products .main .pagination {
+  position: fixed;
+  bottom: 62px;
+  height: 50px;
+  padding-left: 30px;
+}
+.products .main .none-product {
+  color: #333;
+  margin-left: 13.7px;
+}
+/* 主要内容区CSS END */
+}
+@media screen and (min-width: 750px) {
+  .products {
   background-color: #f5f5f5;
 }
 /* 面包屑CSS */
@@ -271,4 +336,6 @@ export default {
   margin-left: 13.7px;
 }
 /* 主要内容区CSS END */
+
+}
 </style>

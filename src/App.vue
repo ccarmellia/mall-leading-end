@@ -340,6 +340,8 @@ a:hover {
   text-decoration: none;
 }
 .footer .mod_help {
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #888888;
 }
@@ -371,6 +373,8 @@ a:hover {
 }
 /* 底栏容器CSS END */
 }
+
+
 
 @media screen and (min-width:750px){
 /* 全局CSS */

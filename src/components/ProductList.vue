@@ -57,7 +57,7 @@ export default {
   float: left;
   width: 234px;
   height: 280px;
-  padding: 10px 30px 0 50px;
+  padding: 10px 30px 0 70px;
   margin: 0 0 14.5px 13.7px;
   background-color: white;
   -webkit-transition: all 0.2s linear;
@@ -118,6 +118,8 @@ export default {
   color: #ff6700;
 }
 }
+
+
 @media screen and (min-width:750px){
 .productList ul li {
   z-index: 1;
